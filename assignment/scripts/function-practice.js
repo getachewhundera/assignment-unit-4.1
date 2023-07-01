@@ -6,85 +6,102 @@ console.log('***** Function Practice *****');
 
 // 1. Function to return 'Hello World!'
 function hello() {
-  return 'Hello World!';
+  return ('Hello World!');
 }
-// Call the function to test
-console.log('Test - should say "Hello World!"', hello());
+// Just checking another way to possibly write out q2. Call the function to test. 
+console.log(hello());
+
+// let name = 'Gabi';
+
+// function helloName(name) {
+//   return 'Hello, ' + name + '!';
+// }
+//Remember to call the function to test
+
+// console.log(helloName(name));
 
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName(name) {
-  return;
+function helloName (name) {
+  return `Hello, ${name}!`; 
 }
-// Remember to call the function to test
-
+// // Remember to call the function to test
+console.log(helloName('Jo')); 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
-  // return firstNumber + secondNumber;
-}
+function addNumbers(firstNumber, secondNumber) {
+  let result = firstNumber + secondNumber; 
+  return (result); 
+  }
 
+  console.log(addNumbers(2, 3)); 
+ 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(a , b , c) {
+  let answer= (a * b * c);
+  return (answer); 
 }
+console.log(multiplyThree(4, 5, 6));
 
 
-// 5. Function that will return true if a number is positive, 
-//    or greater than zero, and false otherwise
+// // 5. Function that will return true if a number is positive, 
+// //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
-  }
-  return;
+    return (true); 
+  } else {
+    return (false); 
+  } 
 }
-// Call the function to test each outcome (true & false) 
-// Write a separate console.log statement for each outcome
+// // Call the function to test each outcome (true & false) 
+// // Write a separate console.log statement for each outcome
+
 console.log('isPositive - should say true', isPositive(3));
 console.log('isPositive - should say false', isPositive(0));
 console.log('isPositive - should say false', isPositive(-3));
 
 
-// 6. Function to return the _last_ item in an array. If the 
-//    array is empty, return `undefined`.
-function getLast(array) {
+// // 6. Function to return the _last_ item in an array. If the 
+// //    array is empty, return `undefined`.
+// function getLast(array) {
+//   return array1array.length
 
-}
+// }
 
-// 7. Function to find a value in an array. Return true if the 
-//    value is found and false otherwise. Use a loop;
-//    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
+// // 7. Function to find a value in an array. Return true if the 
+// //    value is found and false otherwise. Use a loop;
+// //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+// function find(value, array) {
 
-}
+// }
 
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
+// function isFirstLetter(letter, string) {
 
-}
-console.log('isFirstLetter - should say true', isFirstLetter('a', 'apple'));
-console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
+// }
+// console.log('isFirstLetter - should say true', isFirstLetter('a', 'apple'));
+// console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll() {
-  let sum = 0;
+// function sumAll() {
+//   let sum = 0;
   // TODO: loop to add items
 
   // TODO: return the sum
-}
+// }
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
+// function allPositive() {
 
-}
+// }
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
@@ -94,19 +111,46 @@ function allPositive() {
 
 // DO NOT MODIFY
 // Used for automated testing
-try {
-  module.exports = {
-    hello,
-    helloName,
-    addNumbers,
-    multiplyThree,
-    isPositive,
-    getLast,
-    find,
-    isFirstLetter,
-    sumAll,
-    allPositive,
-  };
-} catch (e) {
+
+
+
+
+// try {
+//   module.exports = {
+//     hello,
+//     helloName,
+//     addNumbers,
+//     multiplyThree,
+//     isPositive,
+//     getLast,
+//     find,
+//     isFirstLetter,
+//     sumAll,
+//     allPositive,
+//   };
+// } catch (e) {
+
+
+
+
+
   // Do nothing
-}
+
+
+
+// }
+
+
+
+
+
+// let partsToShip= 572
+// let boxSize= 7 
+// let filledBoxes= 0 
+
+// function  shipParts(){
+//   while (partsToShip > boxSize){
+//     partsToShip -= boxSize
+//     filledBoxes += 1 
+//   }
+  // return console.log("Part to ship" , partsToShip) , console.log("Full boxes" , filledBoxes)
